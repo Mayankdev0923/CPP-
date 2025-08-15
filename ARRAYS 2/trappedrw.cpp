@@ -13,7 +13,6 @@ void trappedrw(int *arr, int n)
     {
         leftmax[i] = max(leftmax[i-1], arr[i - 1]);
     }
-    cout << endl;
     for (int j = n - 2; j >= 0; j--)
     {
         rightmax[j] = max(arr[j + 1], rightmax[j + 1]);
